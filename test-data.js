@@ -2025,7 +2025,7 @@ var data = {
             "class": "state variable",
             "id": "Protein_96012d6b7e497e009891447328125c34_Complex_c4c9e6a6f96481282c9cf3c77fdb0d30.info.1",
             "state": {
-              "value": "x[1 - 680]",
+              //"value": "x[1 - 680]",
               "variable": ""
             }
           }
@@ -2280,7 +2280,7 @@ var data = {
             "class": "state variable",
             "id": "Protein_4de22b25dff4d921d9d60697a694216a_Complex_726d20be5cd94056afbed120f2a65824.info.1",
             "state": {
-              "value": "opser",
+              //"value": "opser",
               "variable": "20"
             }
           },
@@ -2288,7 +2288,7 @@ var data = {
             "class": "state variable",
             "id": "Protein_4de22b25dff4d921d9d60697a694216a_Complex_726d20be5cd94056afbed120f2a65824.state.2",
             "state": {
-              "value": "x[1 - 393]",
+              // "value": "x[1 - 393]",
               "variable": ""
             }
           },
@@ -2297,7 +2297,7 @@ var data = {
             "id": "Protein_4de22b25dff4d921d9d60697a694216a_Complex_726d20be5cd94056afbed120f2a65824.info.3",
             "state": {
               "value": "opser",
-              "variable": "15"
+              //"variable": "15"
             }
           }
         ],
@@ -2930,7 +2930,7 @@ var data = {
             "class": "state variable",
             "id": "Protein_66875160ad98fc3e53249cf2824dc2b6_Complex_8a1c649553b76236a862b30e4215a7e4.info.1",
             "state": {
-              "value": "x[1 - 636]",
+              //"value": "x[1 - 636]",
               "variable": ""
             }
           }
@@ -2994,7 +2994,7 @@ var data = {
         "unitsOfInformation": []
       },
       "position": {
-        "x": -446.39308161383275,
+        "x": 446.39308161383275,
         "y": 1409.2844368985807
       },
       "group": "nodes",
