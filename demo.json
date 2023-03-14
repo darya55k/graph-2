@@ -118,7 +118,7 @@
     "removed": false,
     "selected": false,
     "selectable": true,
-    "locked": false,
+    "locked": true,
     "grabbable": true,
     "pannable": false,
     "classes": "itmo_graph"
