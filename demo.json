@@ -1,10 +1,10 @@
 [
   {
     "data": {
-      "id": "rudn_fac_1",
+      "id": "itmo_fac_1",
       "class": "macromolecule",
       "label": "IT",
-      "parent": "rudn_graph",
+      "parent": "itmo_graph",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -16,8 +16,8 @@
       }
     },
     "position": {
-      "x": 1815.1991122293518,
-      "y": 382.139183750573
+      "x": 2100.1991122293518,
+      "y": 60.139183750573
     },
     "group": "nodes",
     "removed": false,
@@ -26,14 +26,17 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "rudn_fac_1"
+    "classes": [
+      "itmo_fac_1",
+      "facultets_same"
+    ]
   },
   {
     "data": {
-      "id": "rudn_fac_2",
+      "id": "itmo_fac_2",
       "class": "macromolecule",
       "label": "Экономика",
-      "parent": "rudn_graph",
+      "parent": "itmo_graph",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -46,7 +49,7 @@
     },
     "position": {
       "x": 1415.1991122293518,
-      "y": 382.139183750573
+      "y": 300.139183750573
     },
     "group": "nodes",
     "removed": false,
@@ -55,13 +58,48 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "rudn_fac_2"
+    "classes": [
+      "itmo_fac_2",
+      "facultets_same"
+    ]
   },
   {
     "data": {
-      "id": "rudn_graph",
+      "id": "itmo_fac_3",
+      "class": "macromolecule",
+      "label": "Физика и инженерия",
+      "parent": "itmo_graph",
+      "clonemarker": false,
+      "stateVariables": [],
+      "unitsOfInformation": [],
+      "bbox": {
+        "x": 1820.439889522249,
+        "y": 268.820483039897,
+        "w": 120,
+        "h": 60
+      }
+    },
+    "position": {
+      "x": 2100.1991122293518,
+      "y": 900.139183750573
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": false,
+    "classes": [
+      "itmo_fac_3",
+      "facultets_same"
+    ]
+  },
+  {
+    "data": {
+      "id": "itmo_graph",
       "class": "compartment",
-      "label": "RUDN",
+      "label": "itmo",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -83,7 +121,7 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "rudn_graph"
+    "classes": "itmo_graph"
   },
   {
     "data": {
@@ -111,14 +149,14 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "rudn_graph"
+    "classes": "itmo_graph"
   },
   {
     "data": {
-      "id": "rudn_sub_1_1",
+      "id": "itmo_sub_1_1",
       "class": "complex",
       "label": "",
-      "parent": "rudn_graph",
+      "parent": "itmo_graph",
       "clonemarker": false,
       "stateVariables": [
         {
@@ -134,7 +172,7 @@
       "bbox": {
         "x": 1891.4159362399225,
         "y": 479.6244130185455,
-        "w": 121.5,
+        "w": 126.5,
         "h": 136.5
       }
     },
@@ -149,14 +187,14 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": ""
+    "classes": "itmo_sub_1"
   },
   {
     "data": {
-      "id": "rudn_sub_1_2",
+      "id": "itmo_sub_1_2",
       "class": "complex",
       "label": "",
-      "parent": "rudn_graph",
+      "parent": "itmo_graph",
       "clonemarker": false,
       "stateVariables": [
         {
@@ -187,14 +225,14 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": ""
+    "classes": "itmo_sub_1"
   },
   {
     "data": {
-      "id": "rudn_sub_1_1_title",
+      "id": "itmo_sub_1_1_title",
       "class": "macromolecule",
       "label": "Машинное\nобучение",
-      "parent": "rudn_sub_1_1",
+      "parent": "itmo_sub_1_1",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -206,8 +244,8 @@
       }
     },
     "position": {
-      "x": 2201.011704216743,
-      "y": 780.2521185889852
+      "x": 1801.011704216743,
+      "y": 10.2521185889852
     },
     "group": "nodes",
     "removed": false,
@@ -216,14 +254,17 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "text"
+    "classes": [
+      "text",
+      "itmo_sub_1_text"
+    ]
   },
   {
     "data": {
-      "id": "rudn_sub_1_2_title",
+      "id": "itmo_sub_1_2_title",
       "class": "macromolecule",
       "label": "Управление\nпроектами",
-      "parent": "rudn_sub_1_2",
+      "parent": "itmo_sub_1_2",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -235,8 +276,8 @@
       }
     },
     "position": {
-      "x": 1800.011704216743,
-      "y": 680.2521185889852
+      "x": 2000.011704216743,
+      "y": 300.2521185889852
     },
     "group": "nodes",
     "removed": false,
@@ -245,43 +286,17 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "text"
+    "classes": [
+      "text",
+      "itmo_sub_1_text"
+    ]
   },
   {
     "data": {
-      "id": "rudn_sub_1_1_info",
+      "id": "itmo_sub_1_1_info",
       "class": "macromolecule",
       "label": "к. - 70 ч.\nс. - 74 ч.\nз.е. - 4",
-      "parent": "rudn_sub_1_1",
-      "clonemarker": false,
-      "stateVariables": [],
-      "unitsOfInformation": [],
-      "bbox": {
-        "x": 1891.4159362399225,
-        "y": 442.1244130185455,
-        "w": 120,
-        "h": 60
-      }
-    },
-    "position": {
-      "x": 2200.1726224623526,
-      "y": 869.2208977784445
-    },
-    "group": "nodes",
-    "removed": false,
-    "selected": false,
-    "selectable": true,
-    "locked": false,
-    "grabbable": true,
-    "pannable": false,
-    "classes": "text"
-  },
-  {
-    "data": {
-      "id": "rudn_sub_1_2_info",
-      "class": "macromolecule",
-      "label": "к. - 70 ч.\nс. - 74 ч.\nз.е. - 4",
-      "parent": "rudn_sub_1_2",
+      "parent": "itmo_sub_1_1",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -294,7 +309,7 @@
     },
     "position": {
       "x": 1800.1726224623526,
-      "y": 789.2208977784445
+      "y": 100.2208977784445
     },
     "group": "nodes",
     "removed": false,
@@ -303,14 +318,51 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "text"
+    "classes": [
+      "text",
+      "info_same",
+      "itmo_sub_1_text"
+    ]
   },
   {
     "data": {
-      "id": "rudn_sub_2_1",
+      "id": "itmo_sub_1_2_info",
+      "class": "macromolecule",
+      "label": "к. - 70 ч.\nс. - 74 ч.\nз.е. - 4",
+      "parent": "itmo_sub_1_2",
+      "clonemarker": false,
+      "stateVariables": [],
+      "unitsOfInformation": [],
+      "bbox": {
+        "x": 1891.4159362399225,
+        "y": 442.1244130185455,
+        "w": 120,
+        "h": 60
+      }
+    },
+    "position": {
+      "x": 2000.1726224623526,
+      "y": 390.2208977784445
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": false,
+    "classes": [
+      "text",
+      "info_same",
+      "itmo_sub_1_text"
+    ]
+  },
+  {
+    "data": {
+      "id": "itmo_sub_2_1",
       "class": "complex",
       "label": "",
-      "parent": "rudn_graph",
+      "parent": "itmo_graph",
       "clonemarker": false,
       "stateVariables": [
         {
@@ -341,14 +393,14 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": ""
+    "classes": "itmo_sub_2"
   },
   {
     "data": {
-      "id": "rudn_sub_2_2",
+      "id": "itmo_sub_2_2",
       "class": "complex",
       "label": "",
-      "parent": "rudn_graph",
+      "parent": "itmo_graph",
       "clonemarker": false,
       "stateVariables": [
         {
@@ -379,14 +431,14 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": ""
+    "classes": "itmo_sub_2"
   },
   {
     "data": {
-      "id": "rudn_sub_2_1_title",
+      "id": "itmo_sub_2_1_title",
       "class": "macromolecule",
       "label": "Индустриальный\nинтернет",
-      "parent": "rudn_sub_2_1",
+      "parent": "itmo_sub_2_1",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -398,8 +450,8 @@
       }
     },
     "position": {
-      "x": 2201.011704216743,
-      "y": 780.2521185889852
+      "x": 1200.011704216743,
+      "y": 10.2521185889852
     },
     "group": "nodes",
     "removed": false,
@@ -408,14 +460,223 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "text"
+    "classes": [
+      "text",
+      "itmo_sub_2_text"
+    ]
   },
   {
     "data": {
-      "id": "rudn_sub_2_2_title",
+      "id": "itmo_sub_2_2_title",
       "class": "macromolecule",
       "label": "Управление\nинвестициями",
-      "parent": "rudn_sub_2_2",
+      "parent": "itmo_sub_2_2",
+      "clonemarker": false,
+      "stateVariables": [],
+      "unitsOfInformation": [],
+      "bbox": {
+        "x": 1891.4159362399225,
+        "y": 517.1244130185455,
+        "w": 120,
+        "h": 60
+      }
+    },
+    "position": {
+      "x": 1600.011704216743,
+      "y": 490.2521185889852
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": false,
+    "classes": [
+      "text",
+      "itmo_sub_2_text"
+    ]
+  },
+  {
+    "data": {
+      "id": "itmo_sub_2_1_info",
+      "class": "macromolecule",
+      "label": "к. - 35 ч.\nс. - 73 ч.\nз.е. - 3",
+      "parent": "itmo_sub_2_1",
+      "clonemarker": false,
+      "stateVariables": [],
+      "unitsOfInformation": [],
+      "bbox": {
+        "x": 1891.4159362399225,
+        "y": 442.1244130185455,
+        "w": 120,
+        "h": 60
+      }
+    },
+    "position": {
+      "x": 1200.1726224623526,
+      "y": 100.2208977784445
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": false,
+    "classes": [
+      "text",
+      "info_same",
+      "itmo_sub_2_text"
+    ]
+  },
+  {
+    "data": {
+      "id": "itmo_sub_2_2_info",
+      "class": "macromolecule",
+      "label": "к. - 35 ч.\nс. - 73 ч.\nз.е. - 3",
+      "parent": "itmo_sub_2_2",
+      "clonemarker": false,
+      "stateVariables": [],
+      "unitsOfInformation": [],
+      "bbox": {
+        "x": 1891.4159362399225,
+        "y": 442.1244130185455,
+        "w": 140,
+        "h": 60
+      }
+    },
+    "position": {
+      "x": 1600.1726224623526,
+      "y": 580.2208977784445
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": false,
+    "classes": [
+      "text",
+      "info_same",
+      "itmo_sub_2_text"
+    ]
+  },
+  {
+    "data": {
+      "id": "itmo_sub_3_1",
+      "class": "complex",
+      "label": "",
+      "parent": "itmo_graph",
+      "clonemarker": false,
+      "stateVariables": [
+        {
+          "id": "glyph37a",
+          "class": "",
+          "state": {
+            "variable": "",
+            "value": ""
+          }
+        }
+      ],
+      "unitsOfInformation": [],
+      "bbox": {
+        "x": 1891.4159362399225,
+        "y": 479.6244130185455,
+        "w": 121.5,
+        "h": 136.5
+      }
+    },
+    "position": {
+      "x": 2000.592163339548,
+      "y": 824.7365081837149
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": false,
+    "classes": "itmo_sub_3"
+  },
+  {
+    "data": {
+      "id": "itmo_sub_3_2",
+      "class": "complex",
+      "label": "",
+      "parent": "itmo_graph",
+      "clonemarker": false,
+      "stateVariables": [
+        {
+          "id": "glyph37a",
+          "class": "state variable",
+          "state": {
+            "variable": "",
+            "value": "tense"
+          }
+        }
+      ],
+      "unitsOfInformation": [],
+      "bbox": {
+        "x": 1891.4159362399225,
+        "y": 479.6244130185455,
+        "w": 121.5,
+        "h": 136.5
+      }
+    },
+    "position": {
+      "x": 2200.592163339548,
+      "y": 824.7365081837149
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": false,
+    "classes": "itmo_sub_3"
+  },
+  {
+    "data": {
+      "id": "itmo_sub_3_1_title",
+      "class": "macromolecule",
+      "label": "Нелинейная\nоптика",
+      "parent": "itmo_sub_3_1",
+      "clonemarker": false,
+      "stateVariables": [],
+      "unitsOfInformation": [],
+      "bbox": {
+        "x": 1891.4159362399225,
+        "y": 517.1244130185455,
+        "w": 120,
+        "h": 60
+      }
+    },
+    "position": {
+      "x": 2300.011704216743,
+      "y": 500.2521185889852
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": false,
+    "classes": [
+      "text",
+      "itmo_sub_3_text"
+    ]
+  },
+  {
+    "data": {
+      "id": "itmo_sub_3_2_title",
+      "class": "macromolecule",
+      "label": "Физика\nнаноструктур",
+      "parent": "itmo_sub_3_2",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -428,7 +689,7 @@
     },
     "position": {
       "x": 1800.011704216743,
-      "y": 680.2521185889852
+      "y": 850.2521185889852
     },
     "group": "nodes",
     "removed": false,
@@ -437,14 +698,17 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "text"
+    "classes": [
+      "text",
+      "itmo_sub_3_text"
+    ]
   },
   {
     "data": {
-      "id": "rudn_sub_2_1_info",
+      "id": "itmo_sub_3_1_info",
       "class": "macromolecule",
-      "label": "к. - 35 ч.\nс. - 73 ч.\nз.е. - 3",
-      "parent": "rudn_sub_2_1",
+      "label": "к. - 66 ч.\nс. - 78 ч.\nз.е. - 4",
+      "parent": "itmo_sub_3_1",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -456,8 +720,8 @@
       }
     },
     "position": {
-      "x": 2200.1726224623526,
-      "y": 869.2208977784445
+      "x": 2300.1726224623526,
+      "y": 590.2208977784445
     },
     "group": "nodes",
     "removed": false,
@@ -466,14 +730,18 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "text"
+    "classes": [
+      "text",
+      "info_same",
+      "itmo_sub_3_text"
+    ]
   },
   {
     "data": {
-      "id": "rudn_sub_2_2_info",
+      "id": "itmo_sub_3_2_info",
       "class": "macromolecule",
-      "label": "к. - 35 ч.\nс. - 73 ч.\nз.е. - 3",
-      "parent": "rudn_sub_2_2",
+      "label": "к. - 77 ч.\nс. - 67 ч.\nз.е. - 4",
+      "parent": "itmo_sub_3_2",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -486,7 +754,7 @@
     },
     "position": {
       "x": 1800.1726224623526,
-      "y": 780.2208977784445
+      "y": 940.2208977784445
     },
     "group": "nodes",
     "removed": false,
@@ -495,18 +763,22 @@
     "locked": false,
     "grabbable": true,
     "pannable": false,
-    "classes": "text"
+    "classes": [
+      "text",
+      "info_same",
+      "itmo_sub_3_text"
+    ]
   },
   {
     "data": {
-      "id": "rudn_fac_1-rudn_sub_1_1",
+      "id": "itmo_fac_1-itmo_sub_1_1",
       "class": "consumption",
       "cardinality": 0,
-      "source": "rudn_fac_1",
-      "target": "rudn_sub_1_1",
+      "source": "itmo_fac_1",
+      "target": "itmo_sub_1_1",
       "bendPointPositions": [],
-      "portSource": "rudn_fac_1",
-      "portTarget": "rudn_sub_1_1"
+      "portSource": "itmo_fac_1",
+      "portTarget": "itmo_sub_1_1"
     },
     "position": {
       "x": 0,
@@ -523,14 +795,14 @@
   },
   {
     "data": {
-      "id": "rudn_fac_1-rudn_sub_1_2",
+      "id": "itmo_fac_1-itmo_sub_1_2",
       "class": "consumption",
       "cardinality": 0,
-      "source": "rudn_fac_1",
-      "target": "rudn_sub_1_2",
+      "source": "itmo_fac_1",
+      "target": "itmo_sub_1_2",
       "bendPointPositions": [],
-      "portSource": "rudn_fac_1",
-      "portTarget": "rudn_sub_1_2"
+      "portSource": "itmo_fac_1",
+      "portTarget": "itmo_sub_1_2"
     },
     "position": {
       "x": 0,
@@ -547,14 +819,14 @@
   },
   {
     "data": {
-      "id": "rudn_fac_2-rudn_sub_2_1",
+      "id": "itmo_fac_2-itmo_sub_2_1",
       "class": "consumption",
       "cardinality": 0,
-      "source": "rudn_fac_2",
-      "target": "rudn_sub_2_1",
+      "source": "itmo_fac_2",
+      "target": "itmo_sub_2_1",
       "bendPointPositions": [],
-      "portSource": "rudn_fac_2",
-      "portTarget": "rudn_sub_2_1"
+      "portSource": "itmo_fac_2",
+      "portTarget": "itmo_sub_2_1"
     },
     "position": {
       "x": 0,
@@ -571,14 +843,62 @@
   },
   {
     "data": {
-      "id": "rudn_fac_2-rudn_sub_2_2",
+      "id": "itmo_fac_2-itmo_sub_2_2",
       "class": "consumption",
       "cardinality": 0,
-      "source": "rudn_fac_2",
-      "target": "rudn_sub_2_2",
+      "source": "itmo_fac_2",
+      "target": "itmo_sub_2_2",
       "bendPointPositions": [],
-      "portSource": "rudn_fac_2",
-      "portTarget": "rudn_sub_2_2"
+      "portSource": "itmo_fac_2",
+      "portTarget": "itmo_sub_2_2"
+    },
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "group": "edges",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": true,
+    "classes": ""
+  },
+  {
+    "data": {
+      "id": "itmo_fac_3-itmo_sub_3_1",
+      "class": "consumption",
+      "cardinality": 0,
+      "source": "itmo_fac_3",
+      "target": "itmo_sub_3_1",
+      "bendPointPositions": [],
+      "portSource": "itmo_fac_3",
+      "portTarget": "itmo_sub_3_1"
+    },
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "group": "edges",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "pannable": true,
+    "classes": ""
+  },
+  {
+    "data": {
+      "id": "itmo_fac_3-itmo_sub_3_2",
+      "class": "consumption",
+      "cardinality": 0,
+      "source": "itmo_fac_3",
+      "target": "itmo_sub_3_2",
+      "bendPointPositions": [],
+      "portSource": "itmo_fac_3",
+      "portTarget": "itmo_sub_3_2"
     },
     "position": {
       "x": 0,

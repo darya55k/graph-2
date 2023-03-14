@@ -52,8 +52,8 @@
          <label text="muscle cytosol" />
          <bbox y="18.974806008196992" x="1223.249018133457" w="862.289418115462" h="663.5121323746293" />
       </glyph>
-      <glyph id="rudn_graph" class="compartment">
-         <label text="RUDN" />
+      <glyph id="itmo_graph" class="compartment">
+         <label text="itmo" />
          <bbox y="1800.974806008196992" x="1223.249018133457" w="862.289418115462" h="663.5121323746293" />
       </glyph>
       <glyph id="glyph20" class="macromolecule" compartmentRef="glyph2">
@@ -111,7 +111,7 @@
          <label text="actin" />
          <bbox y="238.820483039897" x="1760.439889522249" w="120" h="60" />
       </glyph>
-      <glyph id="rudn_fac_1" class="macromolecule" compartmentRef="rudn_graph">
+      <glyph id="itmo_fac_1" class="macromolecule" compartmentRef="itmo_graph">
          <label text="IT" />
          <bbox y="238.820483039897" x="1760.439889522249" w="120" h="60" />
       </glyph>
@@ -164,14 +164,14 @@
          </glyph>
       </glyph>
 
-<glyph id="rudn_sub_1" class="complex" compartmentRef="rudn_graph">
+<glyph id="itmo_sub_1" class="complex" compartmentRef="itmo_graph">
          <bbox y="411.3744130185455" x="1830.6659362399225" w="121.5" h="136.5" />
          
-         <glyph id="rudn_sub_1_info" class="macromolecule">
+         <glyph id="itmo_sub_1_info" class="macromolecule">
             
             <bbox y="412.1244130185455" x="1831.4159362399225" w="120" h="60" />
          </glyph>
-         <glyph id="rudn_sub_1_title" class="macromolecule">
+         <glyph id="itmo_sub_1_title" class="macromolecule">
             <label text="Машинное обучение" />
             <bbox y="487.1244130185455" x="1831.4159362399225" w="120" h="60" />
          </glyph>

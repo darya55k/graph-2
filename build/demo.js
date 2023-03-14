@@ -1271,27 +1271,113 @@
                     'text-outline-color': 'white',
                     'text-outline-opacity': 1,
                     'text-outline-width': 0.75
-                  }).selector('node.rudn_fac_1').css({
+                  }).selector('node.itmo_fac_1').css({
                     'background-color': '#F5967D',
+
                     'text-wrap': 'wrap',
                     'text-max-width': '100px',
-                    'width': '400px'
+                    'width': '147px',
+                    'height': '44px'
 
-                  }).selector('node.text').css({
+
+                  }).selector('node.itmo_fac_2').css({
+                    'background-color': '#FCD57F',
+
+
+
+
+                  }).selector('node.itmo_fac_3').css({
+                    'background-color': ' #F7A97E',
+
+
+
+
+                  }).selector('node.facultets_same').css({
+
 
                     'text-wrap': 'wrap',
+
+                    'width': '147px',
+                    'height': '44px',
+                    'font-size': '12px',
+                    'font-weught': '400'
+
+
+
+                  }).selector('node.itmo_sub_1_text').css({
+
+
+                    'background-color': '#FDEAE5',
+                    'border-color': '#B44224'
+
+                  })
+                  .selector('node.itmo_sub_2_text').css({
+
+
+                    'background-color': '#FFF7E6',
+                    'border-color': '#BB8D25'
+
+                  })
+                  .selector('node.itmo_sub_3_text').css({
+
+
+                    'background-color': '#FEEEE6',
+                    'border-color': '#BB8D25'
+
+                  })
+                  .selector('node.itmo_sub_1').css({
+                    'background-color': '#F9C0B1',
+                    'border-color': '#B44224',
+                    'border-width': '10px'
+
+
+                  })
+                  .selector('node.itmo_sub_2').css({
+                    'background-color': '#FDE6B2',
+                    'border-color': '#BB8D25',
+                    'border-width': '10px'
+
+
+                  })
+                  .selector('node.itmo_sub_3').css({
+                    'background-color': '#FACCB2',
+                    'border-color': '#B55724',
+                    'border-width': '10px'
+
+
+                  })
+                  .selector('node.text').css({
+
+                    'text-wrap': 'wrap',
+                    'width': '120px',
+                    'font-size': '12px'
+
+
+
+                  }).selector('node.info_same').css({
+
+
+                    'width': '47px',
+                    'height': '70px'
+
+
+
+
+                  }).selector('node.subject_form_same').css({
+
+                    'width': '127px'
 
 
 
                   }).selector('node:selected').css({
-                    'background-color': '#d67614',
+                    'background-color': '#DEEDB3',
                     'target-arrow-color': '#000',
                     'text-outline-color': '#000'
                   }).selector('node:active').css({
                     'overlay-color': '#d67614',
                     'overlay-padding': '14'
-                  }).selector('node.rudn_graph').css({
-                    'background-color': 'linear-gradient(180deg, #364D9C 0%, #6FC0CB 100%)'
+                  }).selector('node.itmo_graph').css({
+                    'background-color': '#D8E4EE'
 
                   })
 
@@ -1380,7 +1466,7 @@
                     'background-repeat': 'no-repeat',
                     'border-width': 0
                   })
-                  .selector('node[class="rudn_fac_1"]').css({
+                  .selector('node[class="itmo_fac_1"]').css({
 
                     'background-fit': 'none',
                     'background-width': '100%',
