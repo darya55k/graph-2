@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "ALS Hauss";
+  src: local("ALS Hauss Regular"), local("ALSHauss-Regular"),
+    url("ALS Hauss/ALSHauss-Regular.ttf") format ("truetype");
+  src: local("ALS Hauss Regular"), local("ALSHauss-Regular"),
+    url("__MACOSX/ALS Hauss/._ALSHauss-Regular.ttf") format ("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ALS Hauss";
+  src: local("ALS Hauss Medium"), local("ALSHauss-Medium"),
+    url("ALS Hauss/ALSHauss-Medium.ttf") format ("truetype");
+  src: local("ALS Hauss Medium"), local("ALSHauss-Medium"),
+    url("__MACOSX/ALS Hauss/._ALSHauss-Medium.ttf") format ("truetype");
+  font-weight: 500;
+  font-style: normal;
+}

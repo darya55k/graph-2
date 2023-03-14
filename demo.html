@@ -4,8 +4,11 @@
 
 
 <head>
-  <title>SBGN stylesheet demo</title>
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link type="text/css" media="all" rel="stylesheet" href="/static/css/style.css" />
+  <title>УМАМ</title>
   <script src="https://unpkg.com/whatwg-fetch@2.0.3/fetch.js"></script>
   <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 
@@ -13,11 +16,13 @@
     body {
       font-family: helvetica neue, helvetica, liberation sans, arial, sans-serif;
       font-size: 14px;
+      overflow-x: hidden;
     }
 
     #cy {
-      width: 100%;
-      height: 100%;
+      width: 1040px;
+      margin: 0 auto;
+      height: 900px;
       position: absolute;
 
 
@@ -26,10 +31,9 @@
     }
 
     #dy {
-      width: 100%;
-      height: 100%;
+      width: 1040px;
+      height: 900px;
       position: absolute;
-      margin-top: 40%;
 
 
 
@@ -43,10 +47,7 @@
       font-weight: bold;
     }
 
-    .header {
-      height: 300px;
-      background-color: aquamarine;
-    }
+
 
     .hh {
       height: 300px;
@@ -55,17 +56,153 @@
 </head>
 
 <body>
-  <h1>cytoscape-sbgn-stylesheet demo</h1>
-  <div class="header"></div>
 
-  <div id="cy">
-  </div>
-  <div class="hh">
-    <p class="kkk">РУДН</p>
-  </div>
+  <header class="header">
 
-  <div id="dy">
-  </div>
+    <div class="logo_red v-center"><a href="#"></a></div>
+    <ul class="header__menu h-list ns-list v-center">
+      <li><a class="list__item_unactive" href="#">ГЛАВНАЯ</a></li>
+      <li><a class="list__item_active" href="#">О ПРОЕКТЕ</a></li>
+      <li><a class="list__item_unactive" href="#">ЗАДАЧИ</a></li>
+      <li><a class="list__item_unactive" href="#">МОЕ ОБУЧЕНИЕ</a></li>
+    </ul>
+    <div class="widgets">
+      <a class="w-link" href="#">
+        <div class="w-notifications v-center"></div>
+      </a>
+      <a class="w-link" href="#">
+        <div class="w-settings v-center"></div>
+      </a>
+      <div class="user-content">
+        <div class="user-info v-center">
+          <p class="username">Елена Бражникова</p>
+          <p class="user-status">Сотрудник</p>
+        </div>
+        <div class="user-icon v-center"><a href="#"></a></div>
+      </div>
+    </div>
+
+  </header>
+  <main class="main h-center">
+    <div class="cur-page">
+      <a class="cur-page_previous" href="#">Внутрироссийская академическая мобильность</a>
+      <div class="arrow v-center"></div>
+      <a class="cur-page_previous" href="#">ДВИЖ</a>
+      <div class="arrow v-center"></div>
+      <a class="cur-page_last" href="#">Выбор дисциплин</a>
+    </div>
+    <button class="btn_white btn_small">Назад</button>
+    <section class="main-content">
+      <h3 class="main__h3 h3_b">Выбор дисциплин для индивидуального плана</h3>
+
+      <div class="main__info">
+        <div class="col-2">
+          <div class="">
+
+            <h3 class="main__h3">ИТМО</h3>
+            <div class="cy__item">
+              <div id="cy">
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <h3 class="main__h3">РУДН</h3>
+            <div class="dy__item">
+              <div id="dy">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__legend">
+          <div class="v-center h-center">
+            <p>к. - контактные часы</p>
+            <p>с. - часы на самостоятельную работу</p>
+            <p>з.е. - зачетные единицы</p>
+          </div>
+        </div>
+      </div>
+      <div class="check">
+        <button class="btn_submit btn_large btn__check">
+          Заполнить заявку
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__content h-center">
+      <div class="h-list">
+        <form class="footer__connect-me h-list">
+          <div class="footer__connect-me__help">
+            <p>Остались вопросы?</p>
+            <p>Мы вам поможем!</p>
+          </div>
+          <div>
+            <input type="tel" name="phone" id="phone" placeholder="Телефон" required />
+            <div>
+              <input type="checkbox" id="agreement_button" name="agreement" checked />
+              <label class="agreement" for="agreement">
+
+                Даю согласие на обработку
+                <a href="#">Персональных данных</a>
+              </label>
+            </div>
+          </div>
+          <input id="submit" type="submit" value="Перезвоните мне" />
+        </form>
+      </div>
+      <div class="h-list footer__info">
+        <div class="logo_white"></div>
+        <div class="footer__menu h-list">
+          <div class="footer__menu__col v-list">
+            <a href="#">О ПРОЕКТЕ</a>
+            <a href="#">НАПРАВЛЕНИЯ</a>
+            <a href="#">УСЛОВИЯ</a>
+          </div>
+          <div class="footer__menu__col v-list">
+            <a href="#">ОТЗЫВЫ</a>
+            <a href="#">НОВОСТИ</a>
+            <a href="#">FAQ</a>
+          </div>
+        </div>
+        <div class="footer__contacts v-list">
+          <div>
+            <p class="footer__phone__number">8 (499) 956-91-91</p>
+            <p class="footer__phone__info">по Москве и МО</p>
+          </div>
+          <div>
+            <p class="footer__phone__number">8 (499) 956-91-91</p>
+            <p class="footer__phone__info">бесплатно по РФ</p>
+          </div>
+          <div>
+            <p class="footer__e-mail">rudvsem@ranepa.ru</p>
+          </div>
+        </div>
+      </div>
+      <ul class="h-list ns-list v-center">
+        <li class="rights">© 2022 РАНХиГС</li>
+        <li>
+          <a class="footer__list__item" href="#">Пользовательское соглашение</a>
+        </li>
+        <li>
+          <a class="footer__list__item" href="#">Политика конфиденциальности</a>
+        </li>
+        <li class="list__item_unactive">
+          <div class="footer__soc-net h-list">
+            <a href="#">
+              <div class="footer__soc-net__item footer__soc-net__youtube"></div>
+            </a>
+            <a href="#">
+              <div class="footer__soc-net__item footer__soc-net__vk"></div>
+            </a>
+            <a href="#">
+              <div class="footer__soc-net__item footer__soc-net__telegram"></div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
 
   <script src="build/demo.js"></script>
 </body>

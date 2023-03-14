@@ -99,7 +99,7 @@
     "data": {
       "id": "itmo_graph",
       "class": "compartment",
-      "label": "itmo",
+      "label": "",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -127,7 +127,7 @@
     "data": {
       "id": "itmo_graph",
       "class": "compartment",
-      "label": "ITMO",
+      "label": "",
       "clonemarker": false,
       "stateVariables": [],
       "unitsOfInformation": [],
@@ -143,12 +143,12 @@
       "y": 585.663028834556
     },
     "group": "nodes",
-    "removed": false,
-    "selected": false,
+    "removed": true,
+    "selected": true,
     "selectable": true,
-    "locked": false,
-    "grabbable": true,
-    "pannable": false,
+    "locked": true,
+    "grabbable": false,
+    "pannable": true,
     "classes": "itmo_graph"
   },
   {

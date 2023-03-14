@@ -99,7 +99,7 @@
         "data": {
             "id": "rudn_graph",
             "class": "compartment",
-            "label": "rudn",
+            "label": "",
             "clonemarker": false,
             "stateVariables": [],
             "unitsOfInformation": [],
@@ -127,7 +127,7 @@
         "data": {
             "id": "rudn_graph",
             "class": "compartment",
-            "label": "rudn",
+            "label": "",
             "clonemarker": false,
             "stateVariables": [],
             "unitsOfInformation": [],
