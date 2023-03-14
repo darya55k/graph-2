@@ -81,6 +81,13 @@
     var sbgnStylesheet = __webpack_require__(1);
     var cytoscape = window.cytoscape;
 
+
+    var dy = window.cy = cytoscape({
+      container: document.getElementById('dy'),
+      elements: fetch('./demo-2.json').then(res => res.json()),
+      layout: { name: 'preset' },
+      style: sbgnStylesheet(cytoscape)
+    });
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       elements: fetch('./demo.json').then(function (res) {
@@ -1378,6 +1385,10 @@
                     'overlay-padding': '14'
                   }).selector('node.itmo_graph').css({
                     'background-color': '#D8E4EE'
+
+                  })
+                  .selector('node.rudn_graph').css({
+                    'background-color': '#C8DBC5'
 
                   })
 
