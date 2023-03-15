@@ -333,6 +333,7 @@ a {
     border: 1px solid #d7d7d7;
     border-radius: 30px;
     display: flex;
+    margin-top: 110px;
 }
 
 .main__legend>div>p {
