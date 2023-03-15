@@ -98,6 +98,49 @@
       layout: { name: 'preset' },
       style: sbgnStylesheet(cytoscape)
     });
+    cy.unbind('click');
+    cy.bind('click', 'node, edge', function (event) {
+      let target = event.target;
+      if (target.isEdge()) {
+        target.style('line-color', '#DEEDB3');
+      } else {
+        target.style({
+          'background-color': '#DEEDB3',
+          'border-color': '#7C9B26'
+        });
+      }
+    });
+
+    dy.unbind('click');
+    dy.bind('click', 'node, edge', function (event) {
+      let target = event.target;
+      if (target.isEdge()) {
+        target.style('line-color', '#DEEDB3');
+      } else {
+        target.style({
+          'background-color': '#DEEDB3',
+          'border-color': '#7C9B26'
+        });
+      }
+    });
+
+    /* dy.unbind('click');
+    dy.bind('click', 'node, edge', function (event) {
+      let target = event.target;
+      if (target.isEdge()) {
+        target.style('line-color', '#DEEDB3');
+      } else {
+        target.style('background-color', '#DEEDB3') = (target.style('background-color', '#DEEDB3')) ? (target.style('background-color', 'white')) : "#DEEDB3"
+        console.log('vdvdvdvdv')
+      }
+
+    }); */
+
+    /* document.getElementById("toggleBackgroundColor").addEventListener("click", function() {
+      let cy = document.getElementById('cy')
+      cy.style.background = (cy.style.background == "black") ? "white" : "black"
+    });
+ */
 
     /***/
   }),
@@ -1307,7 +1350,8 @@
                     'width': '147px',
                     'height': '44px',
                     'font-size': '12px',
-                    'font-weught': '400'
+                    'font-weught': '400',
+
 
 
 
@@ -1365,6 +1409,7 @@
 
 
 
+
                   })
                   .selector('node.text-1').css({
 
@@ -1391,11 +1436,14 @@
 
 
 
-                  }).selector('node:selected').css({
+                  })
+                  .selector('node:selected').css({
                     'background-color': '#DEEDB3',
                     'target-arrow-color': '#000',
                     //'text-outline-color': '#000'
-                  }).selector('node:active').css({
+                  })
+
+                  .selector('node:active').css({
                     'overlay-color': '#d67614',
                     'overlay-padding': '14'
                   }).selector('node.itmo_graph').css({
@@ -1406,6 +1454,12 @@
                     'background-color': '#C8DBC5',
 
                     'border-radius': "10px"
+
+                  })
+                  .selector('node.l').css({
+
+
+                    'background-color': "#C8DBC5"
 
                   })
 
@@ -2730,7 +2784,7 @@
                   var uInfos = getUnitInfos(node);
                   var sVars = getStateVars(node);
 
-                  var style = new Map().set('stroke', '#6A6A6A').set('stroke-width', '1');
+                  var style = new Map().set('stroke', '').set('stroke-width', '1');
 
                   var cloneMarkerSvg = svgStr(hasClonemarker(node) ? auxiliaryItems.multiImgCloneMarker(0, 2, auxItemWidth, auxItemHeight - 3) : '', auxItemWidth, auxItemHeight);
 
@@ -2750,7 +2804,7 @@
                     bgFit: ['cover', 'cover', 'none', 'none'],
                     bgClip: 'node',
                     padding: '8px',
-                    borderWidth: 2
+                    borderWidth: 1
                   };
                 },
                 nucleicAcidFeature: function nucleicAcidFeature(node) {
@@ -2797,7 +2851,7 @@
                   var bgPosY = [];
                   var bgFit = [];
 
-                  var style = new Map().set('stroke', '#555555').set('stroke-width', '6');
+                  var style = new Map().set('stroke', '#B44224').set('stroke-width', '1');
 
                   // order of svg image generation matters
                   if (uInfos.length + sVars.length > 0) {
@@ -2851,7 +2905,7 @@
                     bgFit: bgFit,
                     bgClip: 'node',
                     padding: '22px',
-                    borderWidth: 4
+                    borderWidth: 1
                   };
                 },
                 sourceAndSink: function sourceAndSink(node) {

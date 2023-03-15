@@ -396,14 +396,58 @@ a {
     text-decoration: underline;
 }
 
-#agreement {
+#agreement_button:checked,
+#agreement_button:not(:checked) {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+#agreement_button:checked+label,
+#agreement_button:not(:checked)+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+#agreement_button:checked+.agreement:before,
+#agreement_button:not(:checked)+.agreement:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
     width: 20px;
     height: 20px;
-    background-color: #ffffff;
+    background: #ffffff;
     border: 1px solid #d7d7d7;
     border-radius: 5px;
 }
 
+#agreement_button:checked+.agreement:after,
+#agreement_button:not(:checked)+.agreement:after {
+    content: "";
+    position: absolute;
+}
+
+#agreement_button:checked+.agreement:after,
+#agreement_button:not(:checked)+.agreement:after {
+    left: 3px;
+    top: 0px;
+    width: 12px;
+    height: 8px;
+    content: url('/static/css/img/widgets/check.svg');
+}
+
+#agreement_button:not(:checked)+.agreement:after {
+    opacity: 0;
+}
+
+#agreement_button:checked+.agreement:after {
+    opacity: 1;
+}
 
 
 

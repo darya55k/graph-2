@@ -161,8 +161,9 @@
       "stateVariables": [
         {
           "id": "glyph37a",
-          "class": "",
-          "state": {}
+          "class": "state variable",
+          "state": {},
+          "classes": "line"
         }
       ],
       "unitsOfInformation": [],
