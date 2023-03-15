@@ -162,10 +162,7 @@
         {
           "id": "glyph37a",
           "class": "",
-          "state": {
-            "variable": "",
-            "value": ""
-          }
+          "state": {}
         }
       ],
       "unitsOfInformation": [],
@@ -200,10 +197,7 @@
         {
           "id": "glyph37a",
           "class": "state variable",
-          "state": {
-            "variable": "",
-            "value": "tense"
-          }
+          "state": false
         }
       ],
       "unitsOfInformation": [],
@@ -256,7 +250,8 @@
     "pannable": false,
     "classes": [
       "text",
-      "itmo_sub_1_text"
+      "itmo_sub_1_text",
+      "text-1"
     ]
   },
   {

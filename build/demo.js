@@ -85,6 +85,7 @@
     var dy = window.cy = cytoscape({
       container: document.getElementById('dy'),
       elements: fetch('./demo-2.json').then(res => res.json()),
+      userZoomingEnabled: false,
       layout: { name: 'preset' },
       style: sbgnStylesheet(cytoscape)
     });
@@ -93,6 +94,7 @@
       elements: fetch('./demo.json').then(function (res) {
         return res.json();
       }),
+      userZoomingEnabled: false,
       layout: { name: 'preset' },
       style: sbgnStylesheet(cytoscape)
     });
@@ -213,9 +215,7 @@
                 getUnitInfos: function getUnitInfos(node) {
                   return node.data('unitsOfInformation');
                 },
-                hasAuxItems: function hasAuxItems(node) {
-                  return node.data('stateVariables').length + node.data('unitsOfInformation').length > 0;
-                },
+
                 sbgnClass: function sbgnClass(element) {
                   return element.data('class');
                 },
@@ -1275,9 +1275,9 @@
                     'background-color': '#f6f6f6',
                     'text-opacity': 1,
                     'opacity': 1,
-                    'text-outline-color': 'white',
-                    'text-outline-opacity': 1,
-                    'text-outline-width': 0.75
+                    //'text-outline-color': 'white',
+                    //'text-outline-opacity': 1,
+                    //'text-outline-width': 0.75
                   }).selector('node.itmo_fac_1').css({
                     'background-color': '#F5967D',
 
@@ -1335,7 +1335,8 @@
                   .selector('node.itmo_sub_1').css({
                     'background-color': '#F9C0B1',
                     'border-color': '#B44224',
-                    'border-width': '10px'
+                    'border-width': '10px',
+                    'height': '800px'
 
 
                   })
@@ -1357,7 +1358,21 @@
 
                     'text-wrap': 'wrap',
                     'width': '120px',
-                    'font-size': '12px'
+                    'font-size': '12px',
+                    'color': '#000000',
+                    'text-stroke': 'none',
+
+
+
+
+                  })
+                  .selector('node.text-1').css({
+
+                    'text-wrap': 'wrap',
+                    //'width': '',
+                    'padding-top': '22px',
+                    'margin': '0'
+
 
 
 
@@ -1379,7 +1394,7 @@
                   }).selector('node:selected').css({
                     'background-color': '#DEEDB3',
                     'target-arrow-color': '#000',
-                    'text-outline-color': '#000'
+                    //'text-outline-color': '#000'
                   }).selector('node:active').css({
                     'overlay-color': '#d67614',
                     'overlay-padding': '14'
@@ -1388,7 +1403,9 @@
 
                   })
                   .selector('node.rudn_graph').css({
-                    'background-color': '#C8DBC5'
+                    'background-color': '#C8DBC5',
+
+                    'border-radius': "10px"
 
                   })
 
@@ -1418,6 +1435,7 @@
                     'padding': function padding(node) {
                       return sbgnsvg.draw(node).padding;
                     },
+
                     'border-width': function borderWidth(node) {
                       return sbgnsvg.draw(node).borderWidth;
                     }
@@ -1643,7 +1661,8 @@
                     bgFit: ['contain', 'none'],
                     bgClip: 'node',
                     padding: '38px',
-                    borderWidth: '4'
+                    borderWidth: '0',
+                    borderRadius: '10%'
                   };
                 }
               };
@@ -2816,13 +2835,13 @@
                     bgFit.push('none');
                   }
 
-                  if (sVars.length > 0) {
+                  /* if (sVars.length > 0) {
                     var sVarSvg = svgStr(auxiliaryItems.multiImgStateVar(2, 0, itemW - 5, itemH - 3, sVars[0]), itemW, itemH);
                     images.push(sVarSvg);
                     bgPosX.push('88%');
                     bgPosY.push('0%');
                     bgFit.push('none');
-                  }
+                  } */
 
                   return {
                     bgImage: images,

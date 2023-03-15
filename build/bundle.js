@@ -102,7 +102,7 @@
           return node.data('unitsOfInformation');
         },
         hasAuxItems: function hasAuxItems(node) {
-          return node.data('stateVariables').length + node.data('unitsOfInformation').length > 0;
+          return node.data('stateVariables');
         },
         sbgnClass: function sbgnClass(element) {
           return element.data('class');
