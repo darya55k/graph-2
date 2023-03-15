@@ -439,7 +439,7 @@ a {
     top: 0px;
     width: 12px;
     height: 8px;
-    content: url('/static/css/img/widgets/check.svg');
+    content: url('img/widgets/check.svg');
 }
 
 #agreement_button:not(:checked)+.agreement:after {
